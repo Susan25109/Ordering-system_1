@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{615F10B1-1C65-4BEC-B79A-98C6EF81760D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OrderingSystemFLATSTYLE</RootNamespace>
+    <AssemblyName>OrderingSystemFLATSTYLE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="InsertOrderlist.cs" />
+    <Compile Include="ClassMytools.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login_uc.Designer.cs">
+      <DependentUpon>Login_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Managercs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu_Managercs.Designer.cs">
+      <DependentUpon>Menu_Managercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_學員.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menu_學員.Designer.cs">
+      <DependentUpon>Menu_學員.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyManagement.Designer.cs">
+      <DependentUpon>MyManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myordersystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myordersystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myordersystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myordersystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myordersystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myordersystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="myordersystemDataSet3SQL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myordersystemDataSet3SQL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ordering.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ordering.Designer.cs">
+      <DependentUpon>Ordering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orderlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Orderlist.Designer.cs">
+      <DependentUpon>Orderlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderListElement.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantGear.cs" />
+    <Compile Include="菜單管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="菜單管理.Designer.cs">
+      <DependentUpon>菜單管理.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_uc.resx">
+      <DependentUpon>Login_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Managercs.resx">
+      <DependentUpon>Menu_Managercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_學員.resx">
+      <DependentUpon>Menu_學員.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyManagement.resx">
+      <DependentUpon>MyManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordering.resx">
+      <DependentUpon>Ordering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orderlist.resx">
+      <DependentUpon>Orderlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="菜單管理.resx">
+      <DependentUpon>菜單管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="myordersystemDataSet.xsc">
+      <DependentUpon>myordersystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myordersystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myordersystemDataSet.xss">
+      <DependentUpon>myordersystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet1.xsc">
+      <DependentUpon>myordersystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myordersystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myordersystemDataSet1.xss">
+      <DependentUpon>myordersystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet2.xsc">
+      <DependentUpon>myordersystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myordersystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myordersystemDataSet2.xss">
+      <DependentUpon>myordersystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet3SQL.xsc">
+      <DependentUpon>myordersystemDataSet3SQL.xsd</DependentUpon>
+    </None>
+    <None Include="myordersystemDataSet3SQL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>myordersystemDataSet3SQL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="myordersystemDataSet3SQL.xss">
+      <DependentUpon>myordersystemDataSet3SQL.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myordersystem.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="myordersystem_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>myordersystem.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
